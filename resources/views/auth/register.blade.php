@@ -12,15 +12,15 @@
   <div class="container">
     <div class="login form">
       <header>Sign Up</header>
-      <form action="#">
-        <input type="text" placeholder="Enter your email">
-        <input type="password" placeholder="Create a password">
-        <input type="password" placeholder="Confirm your password">
-        <input type="button" class="button" value="Signup">
+      <form action="{{route ('register')}}" method="POST">
+        @csrf
+        <input type="text" placeholder="Enter your email" :value = "old ('email')">
+        <input type="password" placeholder="Create a password" :value = "old ('password')">
+        <input type="submit" class="button" value="submit" :value = "old ('password')":vlue = "old ('password')":value = "old ('password')">
       </form>
-      <div class="signup">
-        <span class="signup">Already have an account?
-          <label for="check">Login</label>
+      <div class="submit">
+        <span class="submit">Already have an account?
+          <label for="check">login</label>
         </span>
       </div>
     </div>
